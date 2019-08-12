@@ -1,0 +1,10 @@
+/home/gacova/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/191.7141.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/gacova/Documentos/t1SERVER
+-- Boost version: 1.65.1
+-- Found the following Boost libraries:
+--   system
+-- Boost_INCLUDE_DIRS: /usr/include
+-- Boost_LIBRARIES: /usr/lib/x86_64-linux-gnu/libboost_system.so
+-- Boost_VERSION: 106501
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/gacova/Documentos/t1SERVER/cmake-build-debug
