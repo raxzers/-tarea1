@@ -8,10 +8,17 @@
 
 class BSTNode {
 public:
+    /**
+     * @brief varaible del amacenamiento
+     * **/
     int info;
-
+/**
+     * @brief puntero a izquierdo
+     * **/
     BSTNode *left;
-
+/**
+     * @brief puntero derecho
+     * **/
     BSTNode *right;
 };
 

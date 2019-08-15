@@ -14,28 +14,70 @@
 
 class BST {
 private:
-    void find(int, BSTNode **, BSTNode **);
+/**
+ * @brief metodo busqueda
+ * @param par puntero del padre
+ * @param loc puntero del local
+ * **/
 
-    void insert(BSTNode *, BSTNode *);
-    void case_a(BSTNode *,BSTNode *);
+    void find(int item, BSTNode **par, BSTNode **loc);
+/**
+ * @brief metodo auxiliar para la insecion
+ * @param tree arbol actual
+ * @param newBSTNode nuevo dodo
+ * **/
 
-    void case_b(BSTNode *,BSTNode *);
+    void insert(BSTNode *tree, BSTNode *newBSTNode);
+/**
+ * @brief elimina un nodo sin hijos
+ * @param loc local
+ * @param par padre
+ * **/
+    void case_a(BSTNode *par, BSTNode *loc);
+/**
+ * @brief elimina un nodo con un hijo
+ * @param loc local
+ * @param par padre
+ * **/
+    void case_b(BSTNode *par, BSTNode *loc);
+/**
+ * @brief elimina un nodo con dos hijos
+ * @param loc local
+ * @param par padre
+ * **/
 
-    void case_c(BSTNode *,BSTNode *);
+    void case_c(BSTNode *par,BSTNode *loc);
 
-
-    void display(BSTNode *, int);
+/**
+ * @brief metodo auxiliar para la mostrar el arbol
+ * @param ptr puntero del nodo del arbol
+ * @param level nivel del arbol
+ * **/
+    void display(BSTNode *ptr, int level);
     BSTNode *root;
 public:
-
+/**
+ * @brief metodo publico para la insecion
+ * @param num numero que se inserta
+ * **/
 void insert(int num);
 
+/**
+ * @brief metodo publico para la eliminacion
+ * @param num numero que se elimina
+ * **/
 
+void del(int item);
 
-void del(int);
-
+/**
+ * @brief metodo publico para la mostrar el arbol
+ * **/
 
 void display();
+
+/**
+ * @brief constructor del arbol
+ * **/
 
 BST()
 
