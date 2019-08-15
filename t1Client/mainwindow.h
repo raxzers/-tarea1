@@ -33,8 +33,20 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    /**
+    *@brief arbol para el envio de informacion
+    *
+    **/
     boost::property_tree::ptree arbol;
+    /**
+        *@brief metodo para crea el mensaje json
+        *@param arbol arbol de propiedades
+    **/
     void genStr2Ser(boost::property_tree::ptree arbol);
+    /**
+        *@brief instancia de conexion con el servidor
+        *
+    **/
     clienthandler cl;
 };
 

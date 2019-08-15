@@ -22,6 +22,7 @@ private:
 public:
     /**
      *@brief  metodo para obtener el string de entrada
+     *
      * */
     std::__cxx11::string getP() const;
 
