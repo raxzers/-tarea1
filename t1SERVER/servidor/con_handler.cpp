@@ -29,6 +29,7 @@ void con_handler::start() {
 
     std::string raw="";
     raw =dato;
+    //std::cout << dato<< std::endl;
     int ps = raw.find("}");
     this->data = raw.substr(0,ps+1);
     std::cout << this->data<< std::endl;
@@ -71,6 +72,7 @@ void con_handler::operaciones() {
          accionesLista(arbolP);
      }
      else if(arbolP.get<std::string>("id")=="arbol"){
+         std::cout << "entra a acciones"<< std::endl;
          accionesArbol(arbolP);
      }
 
@@ -114,7 +116,7 @@ void con_handler::accionesLista(boost::property_tree::ptree &arbol) {
         l1.change_value(arbol.get<int>("pos"),arbol.get<int>("valor"));
     }
     else if(arbol.get<std::string>("accion")=="obtener"){
-        message= l1.getPosi(arbol.get<int>("pos"));
+        message= std::to_string(l1.getPosi(arbol.get<int>("pos")));
     }
     else if(arbol.get<std::string>("accion")=="eliminar"){
         l1.delete_first();
@@ -125,7 +127,7 @@ void con_handler::accionesLista(boost::property_tree::ptree &arbol) {
 
 void con_handler::accionesArbol(boost::property_tree::ptree &arbol) {
 
-    if(arbol.get<std::string>("accion")=="insetar"){
+    if(arbol.get<std::string>("accion")=="insertar"){
         bst1.insert(arbol.get<int>("valor"));
         bst1.display();
     }

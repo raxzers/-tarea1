@@ -11,7 +11,7 @@ void clienthandler::send2Server(std::string dta) {
     boost::system::error_code error;
     boost::asio::write( socket, boost::asio::buffer(msg), error );
     if( !error ) {
-        cout << "Client sent hello message!" << endl;
+        cout << dta << endl;
     }
     else {
         cout << "send failed: " << error.message() << endl;

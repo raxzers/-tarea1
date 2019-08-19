@@ -35,11 +35,13 @@ void MainWindow::on_listEdit_clicked()
 
 void MainWindow::on_listGetValuePos_clicked()
 {
+    ui->txtpos->clear();
     arbol.put("id","lista");
     arbol.put("accion","obtener");
     arbol.put("pos",ui->posCampObt->text().toInt());
     genStr2Ser(arbol);
     ui->posCampObt->clear();
+    ui->txtpos->setText(QString::fromStdString(cl.getP()));
 }
 
 void MainWindow::on_listDelete_clicked()

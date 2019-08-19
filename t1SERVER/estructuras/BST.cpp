@@ -440,4 +440,5 @@ void BST::insert(int num) {
 void BST::display() {
 
     display(root,1);
+    cout<< "salio display"<<endl;
 }
