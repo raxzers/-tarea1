@@ -1,0 +1,107 @@
+\hypertarget{classclienthandler}{}\doxysection{clienthandler Class Reference}
+\label{classclienthandler}\index{clienthandler@{clienthandler}}
+
+
+el que se comunica con el servidor  
+
+
+
+
+{\ttfamily \#include $<$clienthandler.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::\+\_\+\+\_\+cxx11\+::string \mbox{\hyperlink{classclienthandler_ae98c9972d9f008459a0e5529ff01c1bb}{getP}} () const
+\begin{DoxyCompactList}\small\item\em metodo para obtener el string de entrada \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classclienthandler_abb8f6acde7ef6fe584a67c273d929875}{setP}} (const string \&p)
+\begin{DoxyCompactList}\small\item\em metodo para modificar el string de entrada \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classclienthandler_ae5cb9769eae55d50a95de9db62ae243e}{separar\+Mensaje}} (std\+::string info)
+\begin{DoxyCompactList}\small\item\em metodo para convertir el mensaje de un stream de entrada a xml y despues lo pasa al arbol de propiedades \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classclienthandler_a02da509f2917c2817e4595d839eac817}{send2\+Server}} (std\+::string dta)
+\begin{DoxyCompactList}\small\item\em metodo para para el envio de informacion al servidor tipo sockets \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+boost\+::property\+\_\+tree\+::ptree \mbox{\hyperlink{classclienthandler_a794c44f7b83a8b18746683a61c6674b4}{prop\+Sev}}
+\begin{DoxyCompactList}\small\item\em arbol de propiedades para donde se almacena la informacion recibida del servidor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+el que se comunica con el servidor 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classclienthandler_ae98c9972d9f008459a0e5529ff01c1bb}\label{classclienthandler_ae98c9972d9f008459a0e5529ff01c1bb}} 
+\index{clienthandler@{clienthandler}!getP@{getP}}
+\index{getP@{getP}!clienthandler@{clienthandler}}
+\doxysubsubsection{\texorpdfstring{getP()}{getP()}}
+{\footnotesize\ttfamily string clienthandler\+::getP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+metodo para obtener el string de entrada 
+
+\mbox{\Hypertarget{classclienthandler_a02da509f2917c2817e4595d839eac817}\label{classclienthandler_a02da509f2917c2817e4595d839eac817}} 
+\index{clienthandler@{clienthandler}!send2Server@{send2Server}}
+\index{send2Server@{send2Server}!clienthandler@{clienthandler}}
+\doxysubsubsection{\texorpdfstring{send2Server()}{send2Server()}}
+{\footnotesize\ttfamily void clienthandler\+::send2\+Server (\begin{DoxyParamCaption}\item[{std\+::string}]{dta }\end{DoxyParamCaption})}
+
+
+
+metodo para para el envio de informacion al servidor tipo sockets 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dta} & info de salida al cliente hacia servidor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclienthandler_ae5cb9769eae55d50a95de9db62ae243e}\label{classclienthandler_ae5cb9769eae55d50a95de9db62ae243e}} 
+\index{clienthandler@{clienthandler}!separarMensaje@{separarMensaje}}
+\index{separarMensaje@{separarMensaje}!clienthandler@{clienthandler}}
+\doxysubsubsection{\texorpdfstring{separarMensaje()}{separarMensaje()}}
+{\footnotesize\ttfamily void clienthandler\+::separar\+Mensaje (\begin{DoxyParamCaption}\item[{std\+::string}]{info }\end{DoxyParamCaption})}
+
+
+
+metodo para convertir el mensaje de un stream de entrada a xml y despues lo pasa al arbol de propiedades 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & stirng donde recibe la informacion de entrada del servidor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classclienthandler_abb8f6acde7ef6fe584a67c273d929875}\label{classclienthandler_abb8f6acde7ef6fe584a67c273d929875}} 
+\index{clienthandler@{clienthandler}!setP@{setP}}
+\index{setP@{setP}!clienthandler@{clienthandler}}
+\doxysubsubsection{\texorpdfstring{setP()}{setP()}}
+{\footnotesize\ttfamily void clienthandler\+::setP (\begin{DoxyParamCaption}\item[{const string \&}]{p }\end{DoxyParamCaption})}
+
+
+
+metodo para modificar el string de entrada 
+
+\begin{DoxyReturn}{Returns}
+el string de entrada 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classclienthandler_a794c44f7b83a8b18746683a61c6674b4}\label{classclienthandler_a794c44f7b83a8b18746683a61c6674b4}} 
+\index{clienthandler@{clienthandler}!propSev@{propSev}}
+\index{propSev@{propSev}!clienthandler@{clienthandler}}
+\doxysubsubsection{\texorpdfstring{propSev}{propSev}}
+{\footnotesize\ttfamily boost\+::property\+\_\+tree\+::ptree clienthandler\+::prop\+Sev}
+
+
+
+arbol de propiedades para donde se almacena la informacion recibida del servidor 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+clienthandler.\+h\item 
+clienthandler.\+cpp\end{DoxyCompactItemize}

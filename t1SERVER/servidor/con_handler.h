@@ -22,7 +22,10 @@ using namespace boost::asio;
 using ip::tcp;
 using std::cout;
 using std::endl;
-
+/**
+    *@brief  comunicador del server
+    *
+    * */
 class con_handler: public boost::enable_shared_from_this<con_handler> {
 public:
     /**
@@ -88,9 +91,21 @@ private:
      *
     * */
     std::string data;
-
+    /**
+    *@brief  sarbol de boost para leer el json
+     *
+    * */
     boost::property_tree::ptree genarbol(std::string arb);
+    /**
+    *@brief  metodo para realizar las acciones en la lista
+     * @param arbol arbol donde especifica la accion a realizar
+    * */
    void accionesLista(boost::property_tree::ptree& arbol);
+
+    /**
+     *@brief  metodo para realizar las acciones en el arbol
+      * @param arbol arbol donde especifica la accion a realizar
+     * */
     void accionesArbol(boost::property_tree::ptree& arbol);
 
 };

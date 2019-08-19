@@ -6,7 +6,15 @@
 #include <boost/property_tree/json_parser.hpp>
 #include "clienthandler.h"
 
+/**
+*@brief ventana principal
+*
+**/
 namespace Ui {
+/**
+*@brief ventana principal
+*
+**/
 class MainWindow;
 }
 

@@ -12,7 +12,10 @@
 using namespace boost::asio;
 using ip::tcp;
 
-
+/**
+    *@brief  servidor  que llama a con_handler
+    *
+    * */
 class Server {
 private:
     tcp::acceptor acceptor_;

@@ -11,7 +11,10 @@ using ip::tcp;
 using std::string;
 using std::cout;
 using std::endl;
-
+/**
+*@brief el que se comunica con el servidor
+*
+**/
 class clienthandler
 {
 private:

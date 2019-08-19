@@ -1,0 +1,134 @@
+\hypertarget{classlnode}{}\doxysection{lnode Class Reference}
+\label{classlnode}\index{lnode@{lnode}}
+
+
+nodo para la lista  
+
+
+
+
+{\ttfamily \#include $<$lnode.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlnode_a407e46f94a9dead6ca0dd981ca43fab9}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em metodo para obtener el valor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlnode_a8612cc14e4e8fb968eb119843d9e2576}{set\+Data}} (int data)
+\begin{DoxyCompactList}\small\item\em metodo para modificar el valor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlnode}{lnode}} $\ast$ \mbox{\hyperlink{classlnode_a2549a5eef5b7d7bff96d1cc8f953e452}{get\+Nxt}} () const
+\begin{DoxyCompactList}\small\item\em metodo para obtener el siguiente \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlnode_a3f828c9fd4606c9acaed5dac61f6aa87}{set\+Nxt}} (\mbox{\hyperlink{classlnode}{lnode}} $\ast$nxt)
+\begin{DoxyCompactList}\small\item\em metodo para modificar el siguiente \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+nodo para la lista 
+
+
+
+Definition at line 12 of file lnode.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlnode_a407e46f94a9dead6ca0dd981ca43fab9}\label{classlnode_a407e46f94a9dead6ca0dd981ca43fab9}} 
+\index{lnode@{lnode}!getData@{getData}}
+\index{getData@{getData}!lnode@{lnode}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily int lnode\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+metodo para obtener el valor 
+
+
+
+Definition at line 6 of file lnode.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{6                          \{}
+\DoxyCodeLine{7     \textcolor{keywordflow}{return} data;}
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlnode_a2549a5eef5b7d7bff96d1cc8f953e452}\label{classlnode_a2549a5eef5b7d7bff96d1cc8f953e452}} 
+\index{lnode@{lnode}!getNxt@{getNxt}}
+\index{getNxt@{getNxt}!lnode@{lnode}}
+\doxysubsubsection{\texorpdfstring{getNxt()}{getNxt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlnode}{lnode}} $\ast$ lnode\+::get\+Nxt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+metodo para obtener el siguiente 
+
+
+
+Definition at line 14 of file lnode.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                            \{}
+\DoxyCodeLine{15     \textcolor{keywordflow}{return} nxt;}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlnode_a8612cc14e4e8fb968eb119843d9e2576}\label{classlnode_a8612cc14e4e8fb968eb119843d9e2576}} 
+\index{lnode@{lnode}!setData@{setData}}
+\index{setData@{setData}!lnode@{lnode}}
+\doxysubsubsection{\texorpdfstring{setData()}{setData()}}
+{\footnotesize\ttfamily void lnode\+::set\+Data (\begin{DoxyParamCaption}\item[{int}]{data }\end{DoxyParamCaption})}
+
+
+
+metodo para modificar el valor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & el valor para modificar \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file lnode.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                             \{}
+\DoxyCodeLine{11     lnode::data = data;}
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlnode_a3f828c9fd4606c9acaed5dac61f6aa87}\label{classlnode_a3f828c9fd4606c9acaed5dac61f6aa87}} 
+\index{lnode@{lnode}!setNxt@{setNxt}}
+\index{setNxt@{setNxt}!lnode@{lnode}}
+\doxysubsubsection{\texorpdfstring{setNxt()}{setNxt()}}
+{\footnotesize\ttfamily void lnode\+::set\+Nxt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlnode}{lnode}} $\ast$}]{nxt }\end{DoxyParamCaption})}
+
+
+
+metodo para modificar el siguiente 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nxt} & puntero para el siguiente \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file lnode.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{18                              \{}
+\DoxyCodeLine{19     lnode::nxt = nxt;}
+\DoxyCodeLine{20 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+estructuras/lnode.\+h\item 
+estructuras/lnode.\+cpp\end{DoxyCompactItemize}

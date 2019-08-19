@@ -1,0 +1,142 @@
+\hypertarget{classlist}{}\doxysection{list Class Reference}
+\label{classlist}\index{list@{list}}
+
+
+tomado y modificado de \href{https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr}{\texttt{ https\+://www.\+codementor.\+io/codementorteam/a-\/comprehensive-\/guide-\/to-\/implementation-\/of-\/singly-\/linked-\/list-\/using-\/c\+\_\+plus\+\_\+plus-\/ondlm5azr}}  
+
+
+
+
+{\ttfamily \#include $<$list.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlist_a223ecca7c96ef287c1e647493a32fbf6}\label{classlist_a223ecca7c96ef287c1e647493a32fbf6}} 
+\mbox{\hyperlink{classlist_a223ecca7c96ef287c1e647493a32fbf6}{list}} ()
+\begin{DoxyCompactList}\small\item\em constructor de la lista \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classlist_a1fdfc18dc89f06cb18192b1fbd589b84}{get\+Posi}} (int pos)
+\begin{DoxyCompactList}\small\item\em metodo para encontrar el valor en la posicion \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlist_a1b9e1123ec0b9052a69e9563a47e091a}{insert\+\_\+start}} (int value)
+\begin{DoxyCompactList}\small\item\em metodo para insertar \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlist_aa9add1532d49d90b25860a0b3064cf52}{change\+\_\+value}} (int pos, int value)
+\begin{DoxyCompactList}\small\item\em metodo para cambiar el valor en una posicion espeficica \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlist_a63d1d277b13b89ce3bc61fb4a95b096b}\label{classlist_a63d1d277b13b89ce3bc61fb4a95b096b}} 
+void \mbox{\hyperlink{classlist_a63d1d277b13b89ce3bc61fb4a95b096b}{delete\+\_\+first}} ()
+\begin{DoxyCompactList}\small\item\em metodo para eliminar el primero de la lista \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classlist_abf7c97616b873ffeebdd0eac2d19d13e}\label{classlist_abf7c97616b873ffeebdd0eac2d19d13e}} 
+void \mbox{\hyperlink{classlist_abf7c97616b873ffeebdd0eac2d19d13e}{display}} ()
+\begin{DoxyCompactList}\small\item\em metodo para mostrar lista en consola \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+tomado y modificado de \href{https://www.codementor.io/codementorteam/a-comprehensive-guide-to-implementation-of-singly-linked-list-using-c_plus_plus-ondlm5azr}{\texttt{ https\+://www.\+codementor.\+io/codementorteam/a-\/comprehensive-\/guide-\/to-\/implementation-\/of-\/singly-\/linked-\/list-\/using-\/c\+\_\+plus\+\_\+plus-\/ondlm5azr}} 
+
+Definition at line 16 of file list.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlist_aa9add1532d49d90b25860a0b3064cf52}\label{classlist_aa9add1532d49d90b25860a0b3064cf52}} 
+\index{list@{list}!change\_value@{change\_value}}
+\index{change\_value@{change\_value}!list@{list}}
+\doxysubsubsection{\texorpdfstring{change\_value()}{change\_value()}}
+{\footnotesize\ttfamily void list\+::change\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{pos,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+metodo para cambiar el valor en una posicion espeficica 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & numero con el que se va cambiar \\
+\hline
+{\em pos} & posicion en la lista \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 21 of file list.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{21                                           \{}
+\DoxyCodeLine{22     \mbox{\hyperlink{classlnode}{lnode}} *cur=head;}
+\DoxyCodeLine{23     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1;i<pos;i++)}
+\DoxyCodeLine{24     \{}
+\DoxyCodeLine{25         cur=cur-\/>\mbox{\hyperlink{classlnode_a2549a5eef5b7d7bff96d1cc8f953e452}{getNxt}}();}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27     cur-\/>\mbox{\hyperlink{classlnode_a8612cc14e4e8fb968eb119843d9e2576}{setData}}(value);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlist_a1fdfc18dc89f06cb18192b1fbd589b84}\label{classlist_a1fdfc18dc89f06cb18192b1fbd589b84}} 
+\index{list@{list}!getPosi@{getPosi}}
+\index{getPosi@{getPosi}!list@{list}}
+\doxysubsubsection{\texorpdfstring{getPosi()}{getPosi()}}
+{\footnotesize\ttfamily int list\+::get\+Posi (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})}
+
+
+
+metodo para encontrar el valor en la posicion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & posicion en la lista \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el nuemero en esa posicion 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file list.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41                          \{}
+\DoxyCodeLine{42     \mbox{\hyperlink{classlnode}{lnode}} *cur=head;}
+\DoxyCodeLine{43     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=1;i<pos;i++)}
+\DoxyCodeLine{44     \{}
+\DoxyCodeLine{45         cur=cur-\/>\mbox{\hyperlink{classlnode_a2549a5eef5b7d7bff96d1cc8f953e452}{getNxt}}();}
+\DoxyCodeLine{46     \}}
+\DoxyCodeLine{47     \textcolor{keywordflow}{return} cur-\/>\mbox{\hyperlink{classlnode_a407e46f94a9dead6ca0dd981ca43fab9}{getData}}();}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classlist_a1b9e1123ec0b9052a69e9563a47e091a}\label{classlist_a1b9e1123ec0b9052a69e9563a47e091a}} 
+\index{list@{list}!insert\_start@{insert\_start}}
+\index{insert\_start@{insert\_start}!list@{list}}
+\doxysubsubsection{\texorpdfstring{insert\_start()}{insert\_start()}}
+{\footnotesize\ttfamily void list\+::insert\+\_\+start (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+metodo para insertar 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & numero que se inserta \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 8 of file list.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                  \{}
+\DoxyCodeLine{9     \mbox{\hyperlink{classlnode}{lnode}} *temp=\textcolor{keyword}{new} \mbox{\hyperlink{classlnode}{lnode}};}
+\DoxyCodeLine{10     temp-\/>\mbox{\hyperlink{classlnode_a8612cc14e4e8fb968eb119843d9e2576}{setData}}(value);}
+\DoxyCodeLine{11     temp-\/>\mbox{\hyperlink{classlnode_a3f828c9fd4606c9acaed5dac61f6aa87}{setNxt}}(head);}
+\DoxyCodeLine{12     head=temp;}
+\DoxyCodeLine{13 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+estructuras/list.\+h\item 
+estructuras/list.\+cpp\end{DoxyCompactItemize}
